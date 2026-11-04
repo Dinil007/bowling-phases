@@ -1,0 +1,82 @@
+# ScoutEdge Bowling Delivery Evidence Pipeline - configuration (no hard-coded paths in code).
+# Paths are relative to the repository root.
+pipeline_version_fallback: "3.0.0-nogit"   # used only if the code is not inside a git checkout
+
+models:
+  detector: "weights/yolox_s.onnx"                    # YOLOX-s, Megvii, Apache-2.0
+  pose: "weights/rtmpose-m_halpe26_256x192.onnx"      # RTMPose-m Halpe-26, OpenMMLab, Apache-2.0
+  threads: 2                                          # fixed for deterministic output
+
+ingest:
+  strict_checksum: true
+
+scan:                     # stage 1: locate bowler + delivery (low cost)
+  detect_fps: 5.0
+  pose_fps: 10.0
+  person_conf: 0.35
+  min_box_frac: 0.06      # ignore people shorter than 6% of frame height
+  min_track_s: 0.6
+  cand_min_rel_height: 0.25
+  max_candidates: 8
+  tier2_raise: -0.3       # dense scan pose around samples with a wrist near shoulder height
+  tier2_radius_s: 0.6
+  gmc_width: 320
+  cut_hist_corr: 0.5
+  track_iou: 0.25
+  track_high: 0.5
+  track_max_gap: 3
+
+isolation:
+  overhead_raise: 0.25    # wrist above shoulder by > 0.25 torso lengths
+  swing_speed: 6.0        # or (wrist - shoulder) changing faster than 6 torso lengths / s
+  pose_fps: 10.0
+  cluster_gap_s: 0.5
+  w_motion: 1.0
+  w_size: 1.0
+  accept_frac: 0.75       # earliest cluster within 75% of the best = first delivery
+  ambiguity_margin: 0.1   # scores within 10% ...
+  ambiguity_window_s: 0.2 # ... and peaks within 0.2 s => AMBIGUOUS_BOWLER
+
+dense:                    # stage 2: native-frame refinement around the anchor
+  pre_s: 1.5
+  post_s: 2.0
+  work_max_width: 1280
+  thumb_max_width: 960
+  person_conf: 0.3
+  ball_conf: 0.25
+  max_degraded_frames: 10
+
+events:
+  kp_min_score: 0.3
+  foot_min_score: 0.35
+  plant_speed: 1.0        # body-heights / s; below this a foot is treated as planted
+  plant_min_frames: 2
+  ffc_search_s: 0.5       # FFC searched in [BR - 0.5 s, BR + 1 frame]
+  bfc_search_s: 0.5
+  gto_search_s: 0.6
+  br_search_pre_s: 0.4
+  br_search_post_s: 0.8
+  br_cue: "speed_peak"    # speed_peak | apex
+  foot_speed_filter: 3    # median filter length on foot speed (1 = none)
+  centered_speed: false   # central-difference speed (zero lag) vs backward difference
+  br_offset_frames: 4     # release ~4 frames after the wrist-speed peak; calibrated on dev clips (validation report)
+  br_window_frames: 2
+  br_emit_estimate: true  # emit a kinematic BR frame (partially_visible) when arm evidence is strong
+  br_min_arm_conf: 0.5
+  br_min_prominence: 2.0
+  ball_check: true
+  ball_conf: 0.3
+  ball_sep_min: 0.08      # ball centre 0.08..1.0 body heights from the wrist
+  ball_sep_max: 1.0
+  rus_move_speed: 0.5
+  link_dist: 1.0
+  detect_fps: 5.0
+  fte_min_after_br_s: 0.2
+  fte_walk_speed: 1.0
+  fte_slow_frames: 3
+  post_s_hint: 2.0
+
+visualizations:
+  enabled: true
+  contact_sheet_radius: 3
+  video_max_width: 960

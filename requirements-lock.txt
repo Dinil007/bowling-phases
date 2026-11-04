@@ -1,0 +1,16 @@
+# Pinned versions for ScoutEdge Bowling Pipeline (Python 3.12.4, win32).
+# Regenerated from requirements.txt transitive closure.
+annotated-types==0.7.0
+colorama==0.4.6
+iniconfig==2.3.0
+numpy==1.26.4
+opencv-python==4.11.0.86
+packaging==24.2
+pluggy==1.6.0
+pydantic==2.13.4
+pydantic_core==2.46.4
+Pygments==2.19.1
+pytest==9.1.1
+PyYAML==6.0.3
+typing_extensions==4.15.0
+typing-inspection==0.4.2

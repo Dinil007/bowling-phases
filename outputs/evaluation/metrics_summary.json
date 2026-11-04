@@ -1,0 +1,660 @@
+{
+  "summary": {
+    "label": "DEVELOPMENT RESULTS - the author saw these clips while building; not an independent test.",
+    "clips_compared": 8,
+    "excluded": [],
+    "event_timing": {
+      "RUS": {
+        "n": 4,
+        "median_frames": 19.5,
+        "max_frames": 429,
+        "median_ms": 650.0,
+        "max_ms": 14300.0,
+        "pct_within_1": 0.0,
+        "pct_within_2": 0.0,
+        "pct_within_3": 0.0
+      },
+      "GTO": {
+        "n": 2,
+        "median_frames": 5.5,
+        "max_frames": 9,
+        "median_ms": 183.3,
+        "max_ms": 300.0,
+        "pct_within_1": 0.0,
+        "pct_within_2": 50.0,
+        "pct_within_3": 50.0
+      },
+      "BFC": {
+        "n": 2,
+        "median_frames": 2.0,
+        "max_frames": 3,
+        "median_ms": 66.7,
+        "max_ms": 100.0,
+        "pct_within_1": 50.0,
+        "pct_within_2": 50.0,
+        "pct_within_3": 100.0
+      },
+      "FFC": {
+        "n": 5,
+        "median_frames": 1.0,
+        "max_frames": 6,
+        "median_ms": 33.3,
+        "max_ms": 200.0,
+        "pct_within_1": 60.0,
+        "pct_within_2": 80.0,
+        "pct_within_3": 80.0
+      },
+      "BR": {
+        "n": 5,
+        "median_frames": 1.0,
+        "max_frames": 4,
+        "median_ms": 43.5,
+        "max_ms": 133.3,
+        "pct_within_1": 60.0,
+        "pct_within_2": 80.0,
+        "pct_within_3": 80.0
+      },
+      "FTE": {
+        "n": 6,
+        "median_frames": 19.0,
+        "max_frames": 363,
+        "median_ms": 633.3,
+        "max_ms": 12100.0,
+        "pct_within_1": 0.0,
+        "pct_within_2": 0.0,
+        "pct_within_3": 0.0
+      }
+    },
+    "observability_confusion": {
+      "RUS": {
+        "TP_obs": 4,
+        "pred_obs_ref_not": 4,
+        "pred_not_ref_obs": 0,
+        "both_not": 0
+      },
+      "GTO": {
+        "TP_obs": 2,
+        "pred_obs_ref_not": 1,
+        "pred_not_ref_obs": 4,
+        "both_not": 1
+      },
+      "BFC": {
+        "TP_obs": 2,
+        "pred_obs_ref_not": 1,
+        "pred_not_ref_obs": 5,
+        "both_not": 0
+      },
+      "FFC": {
+        "TP_obs": 5,
+        "pred_obs_ref_not": 1,
+        "pred_not_ref_obs": 1,
+        "both_not": 1
+      },
+      "BR": {
+        "TP_obs": 5,
+        "pred_obs_ref_not": 0,
+        "pred_not_ref_obs": 2,
+        "both_not": 1
+      },
+      "FTE": {
+        "TP_obs": 6,
+        "pred_obs_ref_not": 0,
+        "pred_not_ref_obs": 0,
+        "both_not": 2
+      }
+    },
+    "false_confident": [
+      {
+        "clip_id": "dev_01",
+        "event": "RUS",
+        "pred_frame": 78,
+        "ref_vis": "not_observable"
+      },
+      {
+        "clip_id": "dev_03",
+        "event": "RUS",
+        "pred_frame": 258,
+        "ref_vis": "not_observable"
+      },
+      {
+        "clip_id": "dev_03",
+        "event": "GTO",
+        "pred_frame": 269,
+        "ref_vis": "not_observable"
+      },
+      {
+        "clip_id": "dev_03",
+        "event": "BFC",
+        "pred_frame": 272,
+        "ref_vis": "not_observable"
+      },
+      {
+        "clip_id": "dev_03",
+        "event": "FFC",
+        "pred_frame": 274,
+        "ref_vis": "not_observable"
+      },
+      {
+        "clip_id": "dev_04",
+        "event": "RUS",
+        "pred_frame": 54,
+        "ref_vis": "not_observable"
+      },
+      {
+        "clip_id": "dev_05",
+        "event": "RUS",
+        "pred_frame": 100,
+        "ref_vis": "not_observable"
+      }
+    ],
+    "false_confident_count": 7,
+    "phase_agreement_overall": 0.249,
+    "phase_confusion": {
+      "Delivery stride / release preparation": {
+        "none": 31,
+        "Ball release": 2,
+        "Run-up": 2,
+        "Gather": 1,
+        "Delivery stride / release preparation": 7
+      },
+      "Ball release": {
+        "Follow-through": 2,
+        "none": 4,
+        "Ball release": 1
+      },
+      "Follow-through": {
+        "Follow-through": 42,
+        "none": 454,
+        "Ball release": 2
+      },
+      "Run-up": {
+        "none": 131,
+        "Run-up": 166
+      },
+      "Gather": {
+        "none": 14,
+        "Run-up": 9,
+        "Gather": 1,
+        "Delivery stride / release preparation": 1
+      }
+    },
+    "coverage_overall": 0.646,
+    "robustness": {
+      "total": 8,
+      "ok": 8,
+      "failed": 0
+    },
+    "failures": [],
+    "processing": [
+      {
+        "clip_id": "dev_01",
+        "wall_time_s": 188.06,
+        "s_per_video_s": 6.661
+      },
+      {
+        "clip_id": "dev_02",
+        "wall_time_s": 204.04,
+        "s_per_video_s": 4.382
+      },
+      {
+        "clip_id": "dev_03",
+        "wall_time_s": 258.86,
+        "s_per_video_s": 4.184
+      },
+      {
+        "clip_id": "dev_04",
+        "wall_time_s": 105.81,
+        "s_per_video_s": 19.474
+      },
+      {
+        "clip_id": "dev_05",
+        "wall_time_s": 122.28,
+        "s_per_video_s": 12.281
+      },
+      {
+        "clip_id": "dev_06",
+        "wall_time_s": 127.52,
+        "s_per_video_s": 10.627
+      },
+      {
+        "clip_id": "dev_07",
+        "wall_time_s": 214.42,
+        "s_per_video_s": 12.814
+      },
+      {
+        "clip_id": "dev_08",
+        "wall_time_s": 193.95,
+        "s_per_video_s": 11.972
+      }
+    ],
+    "hardware": {
+      "machine": "AMD64",
+      "processor": "AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD",
+      "cpus": 16,
+      "system": "Windows-11-10.0.26300-SP0",
+      "python": "3.12.4"
+    }
+  },
+  "per_clip": [
+    {
+      "clip_id": "dev_01",
+      "fps": 30.0,
+      "events": {
+        "RUS": {
+          "pred": 78,
+          "ref": null,
+          "pred_vis": "partially_visible",
+          "ref_vis": "not_observable"
+        },
+        "GTO": {
+          "pred": null,
+          "ref": null,
+          "pred_vis": "out_of_frame",
+          "ref_vis": "not_observable"
+        },
+        "BFC": {
+          "pred": null,
+          "ref": 84,
+          "pred_vis": "out_of_frame",
+          "ref_vis": "visible",
+          "ref_inside_pred_window": false
+        },
+        "FFC": {
+          "pred": 83,
+          "ref": 89,
+          "pred_vis": "visible",
+          "ref_vis": "visible",
+          "err_frames": -6,
+          "err_ms": -200.0
+        },
+        "BR": {
+          "pred": 90,
+          "ref": 91,
+          "pred_vis": "partially_visible",
+          "ref_vis": "visible",
+          "err_frames": -1,
+          "err_ms": -33.3
+        },
+        "FTE": {
+          "pred": 96,
+          "ref": 459,
+          "pred_vis": "visible",
+          "ref_vis": "visible",
+          "err_frames": -363,
+          "err_ms": -12100.0
+        }
+      },
+      "phase_agreement": 0.011,
+      "phase_frames_compared": 375,
+      "coverage": 0.667
+    },
+    {
+      "clip_id": "dev_02",
+      "fps": 30.0,
+      "events": {
+        "RUS": {
+          "pred": 432,
+          "ref": 3,
+          "pred_vis": "partially_visible",
+          "ref_vis": "visible",
+          "err_frames": 429,
+          "err_ms": 14300.0
+        },
+        "GTO": {
+          "pred": null,
+          "ref": 20,
+          "pred_vis": "out_of_frame",
+          "ref_vis": "visible",
+          "ref_inside_pred_window": false
+        },
+        "BFC": {
+          "pred": null,
+          "ref": 25,
+          "pred_vis": "out_of_frame",
+          "ref_vis": "visible",
+          "ref_inside_pred_window": false
+        },
+        "FFC": {
+          "pred": null,
+          "ref": 28,
+          "pred_vis": "out_of_frame",
+          "ref_vis": "visible",
+          "ref_inside_pred_window": false
+        },
+        "BR": {
+          "pred": null,
+          "ref": 31,
+          "pred_vis": "not_observable",
+          "ref_vis": "visible",
+          "ref_inside_pred_window": false
+        },
+        "FTE": {
+          "pred": null,
+          "ref": null,
+          "pred_vis": "out_of_frame",
+          "ref_vis": "not_observable"
+        }
+      },
+      "phase_agreement": 0.0,
+      "phase_frames_compared": 29,
+      "coverage": 0.167
+    },
+    {
+      "clip_id": "dev_03",
+      "fps": 30.0,
+      "events": {
+        "RUS": {
+          "pred": 258,
+          "ref": null,
+          "pred_vis": "partially_visible",
+          "ref_vis": "not_observable"
+        },
+        "GTO": {
+          "pred": 269,
+          "ref": null,
+          "pred_vis": "visible",
+          "ref_vis": "not_observable"
+        },
+        "BFC": {
+          "pred": 272,
+          "ref": null,
+          "pred_vis": "visible",
+          "ref_vis": "not_observable"
+        },
+        "FFC": {
+          "pred": 274,
+          "ref": null,
+          "pred_vis": "visible",
+          "ref_vis": "not_observable"
+        },
+        "BR": {
+          "pred": null,
+          "ref": null,
+          "pred_vis": "not_observable",
+          "ref_vis": "not_observable"
+        },
+        "FTE": {
+          "pred": null,
+          "ref": null,
+          "pred_vis": "out_of_frame",
+          "ref_vis": "not_observable"
+        }
+      },
+      "phase_agreement": null,
+      "phase_frames_compared": 0,
+      "coverage": 0.667
+    },
+    {
+      "clip_id": "dev_04",
+      "fps": 30.0,
+      "events": {
+        "RUS": {
+          "pred": 54,
+          "ref": null,
+          "pred_vis": "partially_visible",
+          "ref_vis": "not_observable"
+        },
+        "GTO": {
+          "pred": null,
+          "ref": 57,
+          "pred_vis": "not_observable",
+          "ref_vis": "visible",
+          "ref_inside_pred_window": true
+        },
+        "BFC": {
+          "pred": null,
+          "ref": 60,
+          "pred_vis": "not_observable",
+          "ref_vis": "visible",
+          "ref_inside_pred_window": true
+        },
+        "FFC": {
+          "pred": 65,
+          "ref": 63,
+          "pred_vis": "visible",
+          "ref_vis": "visible",
+          "err_frames": 2,
+          "err_ms": 66.7
+        },
+        "BR": {
+          "pred": 67,
+          "ref": 65,
+          "pred_vis": "partially_visible",
+          "ref_vis": "visible",
+          "err_frames": 2,
+          "err_ms": 66.7
+        },
+        "FTE": {
+          "pred": 79,
+          "ref": 100,
+          "pred_vis": "visible",
+          "ref_vis": "visible",
+          "err_frames": -21,
+          "err_ms": -700.0
+        }
+      },
+      "phase_agreement": 0.256,
+      "phase_frames_compared": 43,
+      "coverage": 0.667
+    },
+    {
+      "clip_id": "dev_05",
+      "fps": 23.0,
+      "events": {
+        "RUS": {
+          "pred": 100,
+          "ref": null,
+          "pred_vis": "partially_visible",
+          "ref_vis": "not_observable"
+        },
+        "GTO": {
+          "pred": null,
+          "ref": 100,
+          "pred_vis": "not_observable",
+          "ref_vis": "visible",
+          "ref_inside_pred_window": true
+        },
+        "BFC": {
+          "pred": null,
+          "ref": 102,
+          "pred_vis": "not_observable",
+          "ref_vis": "visible",
+          "ref_inside_pred_window": true
+        },
+        "FFC": {
+          "pred": null,
+          "ref": null,
+          "pred_vis": "not_observable",
+          "ref_vis": "not_observable"
+        },
+        "BR": {
+          "pred": 106,
+          "ref": 107,
+          "pred_vis": "partially_visible",
+          "ref_vis": "visible",
+          "err_frames": -1,
+          "err_ms": -43.5
+        },
+        "FTE": {
+          "pred": 125,
+          "ref": 130,
+          "pred_vis": "visible",
+          "ref_vis": "visible",
+          "err_frames": -5,
+          "err_ms": -217.4
+        }
+      },
+      "phase_agreement": 0.567,
+      "phase_frames_compared": 30,
+      "coverage": 0.5
+    },
+    {
+      "clip_id": "dev_06",
+      "fps": 30.0,
+      "events": {
+        "RUS": {
+          "pred": 36,
+          "ref": 6,
+          "pred_vis": "visible",
+          "ref_vis": "visible",
+          "err_frames": 30,
+          "err_ms": 1000.0
+        },
+        "GTO": {
+          "pred": 136,
+          "ref": 127,
+          "pred_vis": "visible",
+          "ref_vis": "visible",
+          "err_frames": 9,
+          "err_ms": 300.0
+        },
+        "BFC": {
+          "pred": 137,
+          "ref": 134,
+          "pred_vis": "visible",
+          "ref_vis": "visible",
+          "err_frames": 3,
+          "err_ms": 100.0
+        },
+        "FFC": {
+          "pred": 139,
+          "ref": 138,
+          "pred_vis": "visible",
+          "ref_vis": "visible",
+          "err_frames": 1,
+          "err_ms": 33.3
+        },
+        "BR": {
+          "pred": null,
+          "ref": 141,
+          "pred_vis": "not_observable",
+          "ref_vis": "visible",
+          "ref_inside_pred_window": true
+        },
+        "FTE": {
+          "pred": 148,
+          "ref": 170,
+          "pred_vis": "visible",
+          "ref_vis": "visible",
+          "err_frames": -22,
+          "err_ms": -733.3
+        }
+      },
+      "phase_agreement": 0.555,
+      "phase_frames_compared": 164,
+      "coverage": 0.833
+    },
+    {
+      "clip_id": "dev_07",
+      "fps": 30.0,
+      "events": {
+        "RUS": {
+          "pred": 84,
+          "ref": 75,
+          "pred_vis": "partially_visible",
+          "ref_vis": "visible",
+          "err_frames": 9,
+          "err_ms": 300.0
+        },
+        "GTO": {
+          "pred": 161,
+          "ref": 159,
+          "pred_vis": "visible",
+          "ref_vis": "visible",
+          "err_frames": 2,
+          "err_ms": 66.7
+        },
+        "BFC": {
+          "pred": 162,
+          "ref": 163,
+          "pred_vis": "visible",
+          "ref_vis": "visible",
+          "err_frames": -1,
+          "err_ms": -33.3
+        },
+        "FFC": {
+          "pred": 167,
+          "ref": 167,
+          "pred_vis": "visible",
+          "ref_vis": "visible",
+          "err_frames": 0,
+          "err_ms": 0.0
+        },
+        "BR": {
+          "pred": 170,
+          "ref": 170,
+          "pred_vis": "partially_visible",
+          "ref_vis": "visible",
+          "err_frames": 0,
+          "err_ms": 0.0
+        },
+        "FTE": {
+          "pred": 176,
+          "ref": 192,
+          "pred_vis": "visible",
+          "ref_vis": "visible",
+          "err_frames": -16,
+          "err_ms": -533.3
+        }
+      },
+      "phase_agreement": 0.761,
+      "phase_frames_compared": 117,
+      "coverage": 1.0
+    },
+    {
+      "clip_id": "dev_08",
+      "fps": 30.0,
+      "events": {
+        "RUS": {
+          "pred": 36,
+          "ref": 31,
+          "pred_vis": "partially_visible",
+          "ref_vis": "visible",
+          "err_frames": 5,
+          "err_ms": 166.7
+        },
+        "GTO": {
+          "pred": null,
+          "ref": 106,
+          "pred_vis": "not_observable",
+          "ref_vis": "visible",
+          "ref_inside_pred_window": true
+        },
+        "BFC": {
+          "pred": null,
+          "ref": 110,
+          "pred_vis": "not_observable",
+          "ref_vis": "visible",
+          "ref_inside_pred_window": true
+        },
+        "FFC": {
+          "pred": 114,
+          "ref": 115,
+          "pred_vis": "visible",
+          "ref_vis": "visible",
+          "err_frames": -1,
+          "err_ms": -33.3
+        },
+        "BR": {
+          "pred": 120,
+          "ref": 116,
+          "pred_vis": "partially_visible",
+          "ref_vis": "visible",
+          "err_frames": 4,
+          "err_ms": 133.3
+        },
+        "FTE": {
+          "pred": 126,
+          "ref": 143,
+          "pred_vis": "visible",
+          "ref_vis": "visible",
+          "err_frames": -17,
+          "err_ms": -566.7
+        }
+      },
+      "phase_agreement": 0.045,
+      "phase_frames_compared": 112,
+      "coverage": 0.667
+    }
+  ]
+}

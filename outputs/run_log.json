@@ -1,0 +1,248 @@
+{
+  "pipeline_version": "3.0.0-nogit",
+  "manifest": "E:\\ScoutEdge #1\\data\\input_manifest.csv",
+  "config": "E:\\ScoutEdge #1\\configs\\default_pipeline.yaml",
+  "hardware": {
+    "machine": "AMD64",
+    "processor": "AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD",
+    "cpus": 16,
+    "system": "Windows-11-10.0.26300-SP0",
+    "python": "3.12.4"
+  },
+  "clips": [
+    {
+      "clip_id": "dev_01",
+      "path": "E:\\ScoutEdge #1\\data\\raw\\dev_01.mp4",
+      "sha256": "3f193a5e49126900af2f817e17a546f98f307b246d27a9359ef2b90d2862b8c9",
+      "width": 720,
+      "height": 1280,
+      "fps": 30.0,
+      "frame_count": 847,
+      "duration_s": 28.2333,
+      "vfr": false,
+      "probe": "ffprobe",
+      "camera_view": "mobile_vertical",
+      "meta_notes": [],
+      "anchor_frame": 93,
+      "anchor_method": "arm-swing-cluster-v2",
+      "anchor_notes": "Delivery anchor at frame 93 (track 2; arm swing 21.8 torso/s, wrist raise 1.00 torso, pre-motion 4.15 body-heights/s, score 6.96 vs best 6.96). 3 later arm-action cluster(s) ignored (Brief: first delivery only).",
+      "dense_window": [
+        48,
+        153
+      ],
+      "prediction": "outputs/predictions\\dev_01.json",
+      "annotated_video_span": [
+        33,
+        168
+      ],
+      "wall_time_s": 201.69,
+      "s_per_video_s": 7.144
+    },
+    {
+      "clip_id": "dev_02",
+      "path": "E:\\ScoutEdge #1\\data\\raw\\dev_02.mp4",
+      "sha256": "3c657c77be468231f8a1b72c335d1659c874cf3419a7e362b8b4eaab2238357c",
+      "width": 1280,
+      "height": 576,
+      "fps": 30.0,
+      "frame_count": 1397,
+      "duration_s": 46.5667,
+      "vfr": false,
+      "probe": "ffprobe",
+      "camera_view": "broadcast_wide",
+      "meta_notes": [],
+      "anchor_frame": 507,
+      "anchor_method": "arm-swing-cluster-v2",
+      "anchor_notes": "Delivery anchor at frame 507 (track 41; arm swing 9.1 torso/s, wrist raise 1.59 torso, pre-motion 5.47 body-heights/s, score 6.41 vs best 6.41). 2 later arm-action cluster(s) ignored (Brief: first delivery only).",
+      "dense_window": [
+        462,
+        538
+      ],
+      "prediction": "outputs/predictions\\dev_02.json",
+      "annotated_video_span": [
+        411,
+        575
+      ],
+      "wall_time_s": 211.87,
+      "s_per_video_s": 4.55
+    },
+    {
+      "clip_id": "dev_03",
+      "path": "E:\\ScoutEdge #1\\data\\raw\\dev_03.mp4",
+      "sha256": "25637da627cc65046a873069e63b886bd8aa6be39dc2e29aef5452c1376ad0e6",
+      "width": 1280,
+      "height": 576,
+      "fps": 30.0,
+      "frame_count": 1856,
+      "duration_s": 61.8667,
+      "vfr": false,
+      "probe": "ffprobe",
+      "camera_view": "broadcast_wide",
+      "meta_notes": [],
+      "anchor_frame": 282,
+      "anchor_method": "arm-swing-cluster-v2",
+      "anchor_notes": "Delivery anchor at frame 282 (track 40; arm swing 17.4 torso/s, wrist raise 1.15 torso, pre-motion 4.75 body-heights/s, score 6.72 vs best 6.72).",
+      "dense_window": [
+        237,
+        342
+      ],
+      "prediction": "outputs/predictions\\dev_03.json",
+      "annotated_video_span": [
+        222,
+        357
+      ],
+      "wall_time_s": 265.78,
+      "s_per_video_s": 4.296
+    },
+    {
+      "clip_id": "dev_04",
+      "path": "E:\\ScoutEdge #1\\data\\raw\\dev_04.mp4",
+      "sha256": "93e405bdaad9cabce88fce5d79c563f3fb267c06b23f45aaff61d906eb668128",
+      "width": 478,
+      "height": 850,
+      "fps": 30.0,
+      "frame_count": 163,
+      "duration_s": 5.4333,
+      "vfr": true,
+      "probe": "ffprobe",
+      "camera_view": "mobile_vertical",
+      "meta_notes": [
+        "VFR flag: 4 of 162 frame intervals deviate >25% from 1/30 s (max 100.0 ms). Timestamps are index/fps as the Brief specifies; near those intervals true capture time can differ by up to 67 ms."
+      ],
+      "anchor_frame": 72,
+      "anchor_method": "arm-swing-cluster-v2",
+      "anchor_notes": "Delivery anchor at frame 72 (track 1; arm swing 30.3 torso/s, wrist raise 1.19 torso, pre-motion 3.20 body-heights/s, score 7.69 vs best 7.69).",
+      "dense_window": [
+        27,
+        132
+      ],
+      "prediction": "outputs/predictions\\dev_04.json",
+      "annotated_video_span": [
+        12,
+        147
+      ],
+      "wall_time_s": 112.06,
+      "s_per_video_s": 20.625
+    },
+    {
+      "clip_id": "dev_05",
+      "path": "E:\\ScoutEdge #1\\data\\raw\\dev_05.mp4",
+      "sha256": "d0822f378af6dad0ef44fc636e3e5904ea4f7427df311620fca40434bd7617fd",
+      "width": 720,
+      "height": 1280,
+      "fps": 23.0,
+      "frame_count": 229,
+      "duration_s": 9.9565,
+      "vfr": false,
+      "probe": "ffprobe",
+      "camera_view": "mobile_vertical",
+      "meta_notes": [],
+      "anchor_frame": 111,
+      "anchor_method": "arm-swing-cluster-v2",
+      "anchor_notes": "Delivery anchor at frame 111 (track 1; arm swing 48.0 torso/s, wrist raise 1.49 torso, pre-motion 5.33 body-heights/s, score 7.47 vs best 7.47).",
+      "dense_window": [
+        77,
+        157
+      ],
+      "prediction": "outputs/predictions\\dev_05.json",
+      "annotated_video_span": [
+        66,
+        168
+      ],
+      "wall_time_s": 100.65,
+      "s_per_video_s": 10.109
+    },
+    {
+      "clip_id": "dev_06",
+      "path": "E:\\ScoutEdge #1\\data\\raw\\dev_06.mp4",
+      "sha256": "405fd446270a35ae32822a449fee88b06071a0927c4c1b777c19eb15128be914",
+      "width": 1280,
+      "height": 592,
+      "fps": 30.0,
+      "frame_count": 360,
+      "duration_s": 12.0,
+      "vfr": false,
+      "probe": "ffprobe",
+      "camera_view": "broadcast_wide",
+      "meta_notes": [],
+      "anchor_frame": 132,
+      "anchor_method": "arm-swing-cluster-v2",
+      "anchor_notes": "Delivery anchor at frame 132 (track 6; arm swing 8.8 torso/s, wrist raise 0.97 torso, pre-motion 1.36 body-heights/s, score 3.75 vs best 4.00).",
+      "dense_window": [
+        87,
+        192
+      ],
+      "prediction": "outputs/predictions\\dev_06.json",
+      "annotated_video_span": [
+        15,
+        207
+      ],
+      "wall_time_s": 146.11,
+      "s_per_video_s": 12.176
+    },
+    {
+      "clip_id": "dev_07",
+      "path": "E:\\ScoutEdge #1\\data\\raw\\dev_07.mp4",
+      "sha256": "ebce6ad56baef505d3023ee34023fc4c2e832c7e13dccba4d8c464d2f927bf09",
+      "width": 720,
+      "height": 1296,
+      "fps": 30.0,
+      "frame_count": 502,
+      "duration_s": 16.7333,
+      "vfr": false,
+      "probe": "ffprobe",
+      "camera_view": "mobile_vertical",
+      "meta_notes": [],
+      "anchor_frame": 171,
+      "anchor_method": "arm-swing-cluster-v2",
+      "anchor_notes": "Delivery anchor at frame 171 (track 2; arm swing 21.6 torso/s, wrist raise 0.05 torso, pre-motion 3.50 body-heights/s, score 5.82 vs best 5.82). 1 later arm-action cluster(s) ignored (Brief: first delivery only).",
+      "dense_window": [
+        126,
+        231
+      ],
+      "prediction": "outputs/predictions\\dev_07.json",
+      "annotated_video_span": [
+        63,
+        246
+      ],
+      "wall_time_s": 211.32,
+      "s_per_video_s": 12.629
+    },
+    {
+      "clip_id": "dev_08",
+      "path": "E:\\ScoutEdge #1\\data\\raw\\dev_08.mp4",
+      "sha256": "ab42f1571356a6545d3574caa73d57fcd715e5bc47f9b2ed22f392bad6e00494",
+      "width": 1280,
+      "height": 592,
+      "fps": 30.0,
+      "frame_count": 486,
+      "duration_s": 16.2,
+      "vfr": true,
+      "probe": "ffprobe",
+      "camera_view": "broadcast_wide",
+      "meta_notes": [
+        "VFR flag: 1 of 485 frame intervals deviate >25% from 1/30 s (max 45.0 ms). Timestamps are index/fps as the Brief specifies; near those intervals true capture time can differ by up to 12 ms."
+      ],
+      "anchor_frame": 120,
+      "anchor_method": "arm-swing-cluster-v2",
+      "anchor_notes": "Delivery anchor at frame 120 (track 8; arm swing 26.9 torso/s, wrist raise 0.71 torso, pre-motion 2.07 body-heights/s, score 5.99 vs best 5.99). 2 later arm-action cluster(s) ignored (Brief: first delivery only).",
+      "dense_window": [
+        75,
+        180
+      ],
+      "prediction": "outputs/predictions\\dev_08.json",
+      "annotated_video_span": [
+        15,
+        195
+      ],
+      "wall_time_s": 168.84,
+      "s_per_video_s": 10.422
+    }
+  ],
+  "failures": [],
+  "summary": {
+    "total": 8,
+    "ok": 8,
+    "failed": 0
+  }
+}

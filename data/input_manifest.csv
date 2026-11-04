@@ -1,0 +1,9 @@
+clip_id,file_name,sha256,frame_rate,resolution,duration,camera_view,athlete_id
+dev_01,data/raw/dev_01.mp4,3f193a5e49126900af2f817e17a546f98f307b246d27a9359ef2b90d2862b8c9,30.0,720x1280,28.23,mobile_vertical,ATH-PLACEHOLDER-08
+dev_02,data/raw/dev_02.mp4,3c657c77be468231f8a1b72c335d1659c874cf3419a7e362b8b4eaab2238357c,30.0,1280x576,46.57,broadcast_wide,ATH-PLACEHOLDER-01
+dev_03,data/raw/dev_03.mp4,25637da627cc65046a873069e63b886bd8aa6be39dc2e29aef5452c1376ad0e6,30.0,1280x576,61.87,broadcast_wide,ATH-PLACEHOLDER-02
+dev_04,data/raw/dev_04.mp4,93e405bdaad9cabce88fce5d79c563f3fb267c06b23f45aaff61d906eb668128,30.0,478x850,5.43,mobile_vertical,ATH-PLACEHOLDER-03
+dev_05,data/raw/dev_05.mp4,d0822f378af6dad0ef44fc636e3e5904ea4f7427df311620fca40434bd7617fd,23.0,720x1280,9.96,mobile_vertical,ATH-PLACEHOLDER-04
+dev_06,data/raw/dev_06.mp4,405fd446270a35ae32822a449fee88b06071a0927c4c1b777c19eb15128be914,30.0,1280x592,12.0,broadcast_wide,ATH-PLACEHOLDER-05
+dev_07,data/raw/dev_07.mp4,ebce6ad56baef505d3023ee34023fc4c2e832c7e13dccba4d8c464d2f927bf09,30.0,720x1296,16.73,mobile_vertical,ATH-PLACEHOLDER-06
+dev_08,data/raw/dev_08.mp4,ab42f1571356a6545d3574caa73d57fcd715e5bc47f9b2ed22f392bad6e00494,30.0,1280x592,16.2,broadcast_wide,ATH-PLACEHOLDER-07

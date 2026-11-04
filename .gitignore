@@ -1,0 +1,36 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Environments
+venv/
+.env/
+env/
+ENV/
+
+# Model weights (downloaded via scripts/fetch_weights.py)
+weights/
+*.pt
+*.onnx
+
+# Videos / frames of people are never committed (Brief 8). Predictions, evaluation and the run
+# log ARE committed: they are text evidence. Visualisations contain frames of athletes, so they are
+# delivered to the ScoutEdge location separately, not via git (confirm with ScoutEdge).
+*.mp4
+*.mov
+*.avi
+*.jpg
+*.png
+data/raw/
+outputs/visualizations/*
+!outputs/visualizations/.gitkeep
+# IDE, Docs, and OS
+docs/
+*.pdf
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
